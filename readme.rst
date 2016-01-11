@@ -3,7 +3,6 @@ Deploy to Bluemix simple CRUD application using PHP and codeigniter
 ###################
 
 PHP developers still spend a lot of time configuring systems and servers to get a PHP application up and running. PHP developers usually go through this lifecycle every time starting a project. Luckily, there are services out there that take all this grunt work out of creating web applications, such as IBM Bluemix.
-<<<<<<< HEAD
 In this tutorial, we’ll create a web application with a simple Create, Read, Update and delete (CRUD) functionality. We will use  PHP as the runtime and codeigniter as our framework, we will then bind the application to the database using the ClearDB MySql service on Bluemix and and deploy it to Bluemix.
 By the end of our tutorial, our web app will provide a very basic way toCreate, Read, Update and delete blogs and you will learn how to push a PHP codeigniter application to Bluemix and how to setup the services on IBM Bluemix. You will also learn the changes to make to your application when moving your data from local environment to Bluemix. CRUD application will be looking like this:
 
@@ -21,7 +20,7 @@ Steps involves:
 -> cf create-service cleardb spark myDatabaseCRUD ⋅⋅⋅
 
 Download the source code and rename the folder to a unique application name in which you want your application to be called. For my example I called my application "CRUD-PHP-Codeigniter-Bluemix".
-=======
+
 
 In this tutorial, we’ll create a web application with a simple Create, Read, Update and delete (CRUD) functionality. We will use  PHP as the runtime and codeigniter as our framework, we will then bind the application to the database using the ClearDB MySql service on Bluemix and and deploy it to Bluemix.
 
@@ -29,18 +28,7 @@ By the end of our tutorial, our web app will provide a very basic way toCreate, 
 
 
 
-###################
-Steps involves 
-###################
 
-Using the cloud foundry command line, login to Bluemix and navigate to the organization and space you want to push your app too.
--> cf login
--> Enter your Bluemix email and password, then navigate to your org and space which you want
-Create the database service on Bluemix, in this example we are using the ClearDB MySql service. 
-
--> cf create-service cleardb spark myDatabaseCRUD
-Download the source code from GitHub and rename the folder to a unique application name in which you want your application to be called. For my example I called my application "CRUD-PHP-Codeigniter-Bluemix".
->>>>>>> origin/master
 Edit the "manifest.yml" file to update the application name which in my case is "CRUD-PHP-Codeigniter-Bluemix" and the database service name which in my case been called "myDatabaseCRUD", after that we are good to go to push our application to Bluemix. (The manifest.yml is a file which holds all the Bluemix configurations listing all the services and application setup).
 To push your application to bluemix, we need to inside the application directory so navigate to that folder.
 -> cd desktop/CRUD-PHP-Codeigniter-Bluemix
@@ -66,11 +54,8 @@ CREATE TABLE `bloginfo` (
 ) ENGINE=InnoDB AUTO_INCREMENT=272 DEFAULT CHARSET=latin1;
 
 
-<<<<<<< HEAD
 We should now be in action, access your application staging domain, in my case been: `crud-php-codeigniter-bluemix.mybluemix.net <http://crud-php-codeigniter-bluemix.mybluemix.net/>`_ - Enjoy!
-=======
-We should now be in action, access your application staging domain, in my case been: `http://crud-php-codeigniter-bluemix.mybluemix.net/`_ - Enjoy!
->>>>>>> origin/master
+
 
 If you have any questions or need support then contact me or leave a comment below.
 
