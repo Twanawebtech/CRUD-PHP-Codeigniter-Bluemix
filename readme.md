@@ -45,10 +45,12 @@ cf env CRUD-PHP-Codeigniter-Bluemix
 ```
 
 Or you can get the database details via Bluemix dashboard, to get the database details via Bluemix dashboard login to your Bluemix and open your applications which we created and click on the "Show Credentials" button under the MySql Database service.  
+  ![](https://github.com/Twanawebtech/CRUD-PHP-Codeigniter-Bluemix/blob/master/assets/gitImages/ApplicationScreen1.png)
 
 
 * Once you got the database details, use any database management tool to login to the database and create the table and fields, in my case I am using SequelPro to access the database.  
 
+  ![](https://github.com/Twanawebtech/CRUD-PHP-Codeigniter-Bluemix/blob/master/assets/gitImages/ApplicationScreen2.png)
 
 To create the database table and fields, run below script to create the database:  
 ```
