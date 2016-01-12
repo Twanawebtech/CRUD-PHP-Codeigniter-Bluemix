@@ -48,7 +48,7 @@ Or you can get the database details via Bluemix dashboard, to get the database d
   ![](https://github.com/Twanawebtech/CRUD-PHP-Codeigniter-Bluemix/blob/master/assets/gitImages/ApplicationScreen2.png)
 
 
-* Once you got the database details, use any database management tool to login to the database and create the table and fields, in my case I am using SequelPro to access the database.  
+Once you got the database details, use any database management tool to login to the database and create the table and fields, in my case I am using SequelPro to access the database.  
 
   ![](https://github.com/Twanawebtech/CRUD-PHP-Codeigniter-Bluemix/blob/master/assets/gitImages/ApplicationScreen3.png)
 
