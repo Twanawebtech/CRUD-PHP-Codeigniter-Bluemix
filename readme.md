@@ -11,15 +11,15 @@ By the end of our tutorial, our web app will provide a very basic way toCreate, 
   
 ####Steps involves:
 
-0. Using the cloud foundry command line, login to Bluemix and navigate to the organization and space you want to push your app too  
+* Using the cloud foundry command line, login to Bluemix and navigate to the organization and space you want to push your app too  
 ```
--> cf login  
--> Enter your Bluemix email and password, then navigate to your org and space which you want  
+cf login  
+Enter your Bluemix email and password, then navigate to your org and space which you want  
 ```
 
-0. Create the database service on Bluemix, in this example we are using the ClearDB MySql service
+* Create the database service on Bluemix, in this example we are using the ClearDB MySql service
 ```  
--> cf create-service cleardb spark myDatabaseCRUD  
+cf create-service cleardb spark myDatabaseCRUD  
 ```
 
 0. Download the source code and rename the folder to a unique application name in which you want your application to be called. For my example I called my application "CRUD-PHP-Codeigniter-Bluemix".  
@@ -30,17 +30,17 @@ By the end of our tutorial, our web app will provide a very basic way toCreate, 
 
 0. To push your application to bluemix, we need to inside the application directory so navigate to that folder.  
 ```
--> cd desktop/CRUD-PHP-Codeigniter-Bluemix  
+cd desktop/CRUD-PHP-Codeigniter-Bluemix  
 ```
 
 0. Push the applications to Bluemix, to do that use below command  
 ```
--> cf push CRUD-PHP-Codeigniter-Bluemix -b https://github.com/cloudfoundry/php-buildpack -s cflinuxfs2  
+cf push CRUD-PHP-Codeigniter-Bluemix -b https://github.com/cloudfoundry/php-buildpack -s cflinuxfs2  
 ``` 
 
 0. Now that our application is pushed to bluemix, we need to one final step for our application to work, we need to create a database in which our PHP application is looking for. To access our MySql database, first we need to get the database details, to do that run this command to get your database details.  
 ```
--> cf env CRUD-PHP-Codeigniter-Bluemix
+cf env CRUD-PHP-Codeigniter-Bluemix
 ```
 
 Or you can get the database details via Bluemix dashboard, to get the database details via Bluemix dashboard login to your Bluemix and open your applications which we created and click on the "Show Credentials" button under the MySql Database service.  
