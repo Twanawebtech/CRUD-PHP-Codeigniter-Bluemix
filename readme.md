@@ -69,7 +69,7 @@ We should now be in action, access your application staging domain, in my case b
 If you have any questions or need support then contact me or leave a comment below.   
 
 
-####Whats next?  
+####Whats next?   
 
 On our next article we will bind a storage service to our application to store images and files.  
 
