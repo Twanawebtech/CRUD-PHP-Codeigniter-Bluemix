@@ -7,6 +7,7 @@ In this tutorial, we’ll create a web application with a simple Create, Read, U
 
 By the end of our tutorial, our web app will provide a very basic way toCreate, Read, Update and delete blogs and you will learn how to push a PHP codeigniter application to Bluemix and how to setup the services on IBM Bluemix. You will also learn the changes to make to your application when moving your data from local environment to Bluemix. CRUD application will be looking like this
 
+  ![](https://github.com/Twanawebtech/CRUD-PHP-Codeigniter-Bluemix/blob/master/assets/gitImages/ApplicationScreen.png)
 
   
 ####Steps involves:
